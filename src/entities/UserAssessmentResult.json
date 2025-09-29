@@ -1,0 +1,88 @@
+{
+  "name": "UserAssessmentResult",
+  "type": "object",
+  "properties": {
+    "assessment_id": {
+      "type": "string",
+      "description": "Reference to Assessment"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User who took the assessment"
+    },
+    "responses": {
+      "type": "array",
+      "description": "User's answers",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_index": {
+            "type": "number"
+          },
+          "answer": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "scores": {
+      "type": "object",
+      "description": "Calculated dimension scores",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "insights": {
+      "type": "object",
+      "description": "Generated insights",
+      "properties": {
+        "primary_traits": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "strengths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "development_areas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary": {
+          "type": "string"
+        }
+      }
+    },
+    "completion_time_minutes": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "assessment_id",
+    "user_email",
+    "responses"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "write": {
+      "created_by": "{{user.email}}"
+    }
+  }
+}

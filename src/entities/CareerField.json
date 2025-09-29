@@ -1,0 +1,104 @@
+{
+  "name": "CareerField",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Career field name"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "technology",
+        "healthcare",
+        "education",
+        "business",
+        "arts",
+        "science",
+        "engineering",
+        "social_services",
+        "trades",
+        "other"
+      ]
+    },
+    "personality_match": {
+      "type": "array",
+      "description": "Compatible personality traits",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_strengths": {
+      "type": "array",
+      "description": "Key strengths needed",
+      "items": {
+        "type": "string"
+      }
+    },
+    "interests_alignment": {
+      "type": "array",
+      "description": "Relevant interest areas",
+      "items": {
+        "type": "string"
+      }
+    },
+    "academic_requirements": {
+      "type": "object",
+      "properties": {
+        "min_grade_average": {
+          "type": "number"
+        },
+        "required_subjects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "preferred_subjects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "growth_outlook": {
+      "type": "string",
+      "enum": [
+        "excellent",
+        "good",
+        "stable",
+        "declining"
+      ]
+    },
+    "average_salary_range": {
+      "type": "string"
+    },
+    "typical_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "education_path": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "category"
+  ],
+  "rls": {
+    "read": true,
+    "write": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

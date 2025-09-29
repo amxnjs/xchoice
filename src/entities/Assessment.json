@@ -1,0 +1,83 @@
+{
+  "name": "Assessment",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Assessment name"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this assessment measures"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "personality",
+        "strengths",
+        "interests",
+        "values",
+        "learning_style",
+        "cognitive_skills"
+      ],
+      "description": "Type of assessment"
+    },
+    "questions": {
+      "type": "array",
+      "description": "Assessment questions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "multiple_choice",
+              "scale",
+              "ranking"
+            ]
+          },
+          "options": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scale_min": {
+            "type": "number"
+          },
+          "scale_max": {
+            "type": "number"
+          },
+          "dimension": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "Expected completion time"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "category",
+    "questions"
+  ],
+  "rls": {
+    "read": true,
+    "write": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
