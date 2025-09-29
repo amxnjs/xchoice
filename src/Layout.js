@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../src/utils";
 import { Compass, User, BookOpen, Target, Home, CheckSquare, Briefcase, Users, GraduationCap, Building, Lock } from "lucide-react";
 import {
   Sidebar,
@@ -14,9 +14,9 @@ import {
   SidebarHeader,
   SidebarProvider,
   SidebarTrigger,
-} from "@/components/ui/sidebar";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { User as UserEntity } from "@/entities/User";
+} from "../src/components/ui/sidebar";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../src/components/ui/tooltip";
+import { User as UserEntity } from "../src/entities/User";
 
 const navigationItems = [
   { title: "Home", url: createPageUrl("Home"), icon: Home, stage: 0 },

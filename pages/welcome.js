@@ -121,7 +121,7 @@ export default function WelcomePage() {
                         <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-sage mb-4">
                             <Compass className="w-8 h-8 text-white" />
                         </div>
-                        <CardTitle className="text-2xl">Welcome to PathFinder</CardTitle>
+                        <CardTitle className="text-2xl">Welcome to XChoice</CardTitle>
                         <p className="text-gray-600">Let's get to know you better to personalize your journey</p>
                         <div className="flex justify-center mt-4">
                             <div className="flex space-x-2">
