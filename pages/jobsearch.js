@@ -1,14 +1,14 @@
 
 import React, { useState } from 'react';
-import { InvokeLLM } from '@/integrations/Core';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { InvokeLLM } from '../src/integrations/Core';
+import { Button } from '../src/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Input } from '../src/components/ui/input';
+import { Label } from '../src/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../src/components/ui/select';
 import { Loader2, Briefcase, Filter, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Combobox } from "@/components/ui/Combobox";
+import { Combobox } from "../src/components/ui/Combobox";
 
 export default function JobSearchPage() {
     const [filters, setFilters] = useState({

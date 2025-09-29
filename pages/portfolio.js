@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { PortfolioItem, User } from "@/entities/all";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { UploadFile } from "@/integrations/Core";
+import { PortfolioItem, User } from "../src/entities/all";
+import { Button } from "../src/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../src/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "../src/components/ui/dialog";
+import { Input } from "../src/components/ui/input";
+import { Textarea } from "../src/components/ui/textarea";
+import { UploadFile } from "../src/integrations/Core";
 import { Plus, Edit, Trash2, Link as LinkIcon, Share2, Lightbulb, Loader2, Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { format } from "date-fns";
-import { Badge } from "@/components/ui/badge";
-import { Combobox } from "@/components/ui/Combobox";
-import { InvokeLLM } from "@/integrations/Core";
+import { Badge } from "../src/components/ui/badge";
+import { Combobox } from "../src/components/ui/Combobox";
+import { InvokeLLM } from "../src/integrations/Core";
 
 const portfolioCategories = [
     { value: "project", label: "Project" },

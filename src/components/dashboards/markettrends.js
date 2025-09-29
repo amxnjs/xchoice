@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { InvokeLLM } from '@/integrations/Core';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
+import { InvokeLLM } from '../src/integrations/Core';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Button } from '../src/components/ui/button';
 import { ArrowUpRight, ArrowDownRight, RefreshCw, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 

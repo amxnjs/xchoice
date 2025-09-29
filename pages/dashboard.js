@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { User, Assessment, UserAssessmentResult } from "@/entities/all";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { Badge } from "@/components/ui/badge";
+import { User, Assessment, UserAssessmentResult } from "../src/entities/all";
+import { Button } from "../src/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../src/components/ui/card";
+import { Progress } from "../src/components/ui/progress";
+import { Badge } from "../src/components/ui/badge";
 import { Link, useNavigate } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../src/utils";
 import { 
   BookOpen, 
   Target, 
@@ -16,7 +16,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { motion } from "framer-motion";
-import MarketTrends from "@/components/dashboard/MarketTrends"; 
+import MarketTrends from "../src/components/dashboard/MarketTrends"; 
 
 export default function Dashboard() {
   const [user, setUser] = useState(null);

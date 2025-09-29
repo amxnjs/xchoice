@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from "react";
-import { User, UserAssessmentResult, CareerField } from "@/entities/all";
-import { InvokeLLM } from "@/integrations/Core";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
+import { User, UserAssessmentResult, CareerField } from "../src/entities/all";
+import { InvokeLLM } from "../src/integrations/Core";
+import { Card, CardContent, CardHeader, CardTitle } from "../src/components/ui/card";
+import { Badge } from "../src/components/ui/badge";
+import { Button } from "../src/components/ui/button";
+import { Progress } from "../src/components/ui/progress";
 import {
   Target,
   TrendingUp,

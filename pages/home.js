@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
+import { Button } from '../src/components/ui/button';
+import { Card } from '../src/components/ui/card';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../src/utils';
 import { Sparkles, Target, TrendingUp } from 'lucide-react';
 
 const featuredCareers = [

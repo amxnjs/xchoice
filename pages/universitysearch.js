@@ -1,17 +1,17 @@
 
 import React, { useState } from 'react';
-import { InvokeLLM } from '@/integrations/Core';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Slider } from '@/components/ui/slider';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { InvokeLLM } from '../src/integrations/Core';
+import { Button } from '../src/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Input } from '../src/components/ui/input';
+import { Label } from '../src/components/ui/label';
+import { Slider } from '../src/components/ui/slider';
+import { Checkbox } from '../src/components/ui/checkbox';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../src/components/ui/select';
 import { Loader2, School, Filter } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Combobox } from "@/components/ui/Combobox";
-import CurrencyConverter from "@/components/tools/CurrencyConverter";
+import { Combobox } from "../src/components/ui/Combobox";
+import CurrencyConverter from "../src/components/tools/CurrencyConverter";
 
 export default function UniversitySearchPage() {
     const [filters, setFilters] = useState({ 

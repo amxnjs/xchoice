@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { InvokeLLM } from '@/integrations/Core';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Combobox } from '@/components/ui/Combobox';
+import { InvokeLLM } from '../src/integrations/Core';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Input } from '../src/components/ui/input';
+import { Button } from '../src/components/ui/button';
+import { Combobox } from '../src/components/ui/Combobox';
 import { ArrowLeftRight, Loader2, DollarSign } from 'lucide-react';
 
 const currencies = [

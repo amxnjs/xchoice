@@ -1,17 +1,17 @@
 
 import React, { useState } from 'react';
-import { User } from '@/entities/User';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Checkbox } from '@/components/ui/checkbox';
+import { User } from '../src/entities/User';
+import { Button } from '../src/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '../src/components/ui/card';
+import { Input } from '../src/components/ui/input';
+import { Label } from '../src/components/ui/label';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../src/components/ui/select';
+import { Checkbox } from '../src/components/ui/checkbox';
 import { useNavigate } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../src/utils';
 import { Compass, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { Combobox } from "@/components/ui/Combobox";
+import { Combobox } from "../src/components/ui/Combobox";
 
 export default function WelcomePage() {
     const navigate = useNavigate();
@@ -121,7 +121,7 @@ export default function WelcomePage() {
                         <div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-sage mb-4">
                             <Compass className="w-8 h-8 text-white" />
                         </div>
-                        <CardTitle className="text-2xl">Welcome to XChoice</CardTitle>
+                        <CardTitle className="text-2xl">Welcome to PathFinder</CardTitle>
                         <p className="text-gray-600">Let's get to know you better to personalize your journey</p>
                         <div className="flex justify-center mt-4">
                             <div className="flex space-x-2">

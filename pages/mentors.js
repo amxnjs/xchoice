@@ -1,15 +1,14 @@
-
 import React, { useState, useEffect } from "react";
-import { User } from "@/entities/all";
-import { InvokeLLM } from "@/integrations/Core";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { User } from "../src/entities/all";
+import { InvokeLLM } from "../src/integrations/Core";
+import { Card, CardContent, CardHeader, CardTitle } from "../src/components/ui/card";
+import { Badge } from "../src/components/ui/badge";
+import { Button } from "../src/components/ui/button";
+import { Input } from "../src/components/ui/input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../src/components/ui/select";
 import { motion } from "framer-motion";
 import { UserPlus, Send, Loader2, Search, ExternalLink } from "lucide-react";
-import { Combobox } from "@/components/ui/Combobox";
+import { Combobox } from "../src/components/ui/Combobox";
 
 export default function MentorsPage() {
     const [mentors, setMentors] = useState([]);

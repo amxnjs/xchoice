@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect, useCallback } from "react";
-import { UserAssessmentResult, User } from "@/entities/all";
-import { InvokeLLM } from "@/integrations/Core";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Label } from "@/components/ui/label";
+import { UserAssessmentResult, User } from "../src/entities/all";
+import { InvokeLLM } from "../src/integrations/Core";
+import { Button } from "../src/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../src/components/ui/card";
+import { Progress } from "../src/components/ui/progress";
+import { RadioGroup, RadioGroupItem } from "../src/components/ui/radio-group";
+import { Label } from "../src/components/ui/label";
 import { ArrowLeft, ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
