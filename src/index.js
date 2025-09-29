@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { createPageUrl } from "@/utils";
+import { createPageUrl } from "../src/utils";
 import { Compass, User, BookOpen, Target, Home, CheckSquare, Briefcase, Users, GraduationCap, Building, Lock } from "lucide-react";
 import {
   Sidebar,
